@@ -1,0 +1,277 @@
+* { 
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background-image: url(LP.jpg);
+    background-color: black;
+    
+}
+
+body {
+    font-family: montserat;
+}
+
+nav {
+    background: transparent;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgb(236, 236, 233);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    background: blueviolet;
+    transition: .5s;
+   
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 925px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+
+    }
+}
+
+@media  (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+
+ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(236, 236, 233);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+}
+
+nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a {
+    font-size: 20px;
+}
+
+a:hover, a.active {
+    background: none;
+    color: blueviolet;
+    
+}
+#check:checked ~ ul {
+    left: 0;
+}
+}
+
+#header{
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color:  aliceblue;
+}
+
+
+button {
+    border: none;
+    font-size: 17px;
+    border-radius: 3px;
+    font-weight: normal;
+    background: blueviolet;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.form-header h1 {
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+/*---------------------------------------*/
+/* Form Body */
+/*---------------------------------------*/
+.form-body {
+    padding:10px 40px;
+    color:#666;
+    justify-content: center;
+  }
+  
+  .form-group{
+    margin-bottom:20px;
+  }
+  
+  .form-body .label-title {
+    color: blueviolet;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .form-body .form-input {
+      font-size: 17px;
+      box-sizing: border-box;
+      width: 100%;
+      height: 34px;
+      padding-left: 10px;
+      padding-right: 10px;
+      color: #333333;
+      text-align: left;
+      border: 1px solid #d6d6d6;
+      border-radius: 4px;
+      background: white;
+      outline: none;
+      justify-content: center;
+  }
+  
+  
+  
+  .horizontal-group .left{
+    float:left;
+    width:49%;
+    margin-left: 25%;
+  }
+  
+  .horizontal-group .right{
+    float: none;
+    width:49%;
+   margin-left: 25%;
+   margin-top: 30px;
+  }
+  
+  input[type="file"] {
+   outline: none;
+   cursor:pointer;
+   font-size: 17px;
+  }
+  
+  #range-label {
+   width:15%;
+   padding:5px;
+   background-color: #1BBA93;
+   color:white;
+   border-radius: 5px;
+   font-size: 17px;
+   position: relative;
+   top:-8px;
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color:#d9d9d9;
+  }
+  
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    margin-bottom: 90%;
+    
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    justify-content: center;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .form-footer {
+    border: none;
+    font-size: 17px;
+    border-radius: 3px;
+    font-weight: normal;
+    background: blueviolet;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 70%;
+    margin-top: 15%;
+    
+
+  }
