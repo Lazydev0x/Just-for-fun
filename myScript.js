@@ -1,6 +1,18 @@
 // Get the modal
 //var modal = document.getElementById("myModal");
+const modal = document.querySelector("#myModal");
 
+const waitlistButtton = document.querySelector("#joinWaitlist")
+
+waitlistButtton.addEventListener("click", ()=>{
+   modal.style.display = "block";
+})
+
+const cancelButton = document.querySelector("#closeWaitList")
+
+cancelButton.addEventListener("click", ()=>{
+    modal.style.display = "none";
+})
 // Get the button that opens the modal
 //var btn = document.getElementById("button");
 

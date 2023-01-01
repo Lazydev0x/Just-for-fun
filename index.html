@@ -5,7 +5,7 @@
         <title>Project 1</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <script src="myScript.js"></script>
+       
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   </head>
   <body>
@@ -22,12 +22,12 @@
     </nav>
   <header id="header">
     <h1> Play your favorite <span style="color: blueviolet;">esport</span>  games <br> on the <span style="color: blueviolet;">metaverse</span> . <br> Access to real experience. </h1>
-    <button type="button">JOIN WAITLIST</button>
+    <button type="button" id="joinWaitlist">JOIN WAITLIST</button>
   </header>
   <form class="sign-form">
-    <div id="myModal" class="Modal">
+    <div id="myModal" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close" id="closeWaitList">&times;</span>
        <div class="form-header">
           <h1>SignUp, to know when will launch</h1>
        </div>
@@ -51,6 +51,6 @@
   </div>
  </form>
  
- 
+ <script src="myScript.js"></script>
 </body>
 </html>
